@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="SportsStore.UnitTests" Label="SportsStore.UnitTests" Category="项目" />
+    <Node Id="Castle.Core 3.1.0" Label="Castle.Core 3.1.0" Category="包" />
+    <Node Id="Moq 4.1.1309.1617" Label="Moq 4.1.1309.1617" Category="包" />
+    <Node Id="Moq.Delegates 4.0.10827.1" Label="Moq.Delegates 4.0.10827.1" Category="包" />
+    <Node Id="Moq.WithoutCastle 4.0.10827.2" Label="Moq.WithoutCastle 4.0.10827.2" Category="包" />
+    <Node Id="Ninject 3.0.1.10" Label="Ninject 3.0.1.10" Category="包" />
+    <Node Id="SportsStore.WebUI" Label="SportsStore.WebUI" Category="项目" />
+    <Node Id="EntityFramework 4.1.10331.0" Label="EntityFramework 4.1.10331.0" Category="包" />
+    <Node Id="jQuery 1.5.1" Label="jQuery 1.5.1" Category="包" />
+    <Node Id="jQuery.UI.Combined 1.8.11" Label="jQuery.UI.Combined 1.8.11" Category="包" />
+    <Node Id="jQuery.Validation 1.8" Label="jQuery.Validation 1.8" Category="包" />
+    <Node Id="jQuery.vsdoc 1.5.1" Label="jQuery.vsdoc 1.5.1" Category="包" />
+    <Node Id="Modernizr 1.7" Label="Modernizr 1.7" Category="包" />
+    <Node Id="Ninject 3.0.1.10" Label="Ninject 3.0.1.10" Category="包" />
+    <Node Id="SportsStore.Domain" Label="SportsStore.Domain" Category="项目" />
+    <Node Id="Ninject 3.0.1.10" Label="Ninject 3.0.1.10" Category="包" />
+  </Nodes>
+  <Links>
+    <Link Source="Moq.WithoutCastle 4.0.10827.2" Target="Castle.Core 3.1.0" Category="程序包依赖项" />
+    <Link Source="SportsStore.UnitTests" Target="Moq 4.1.1309.1617" Category="安装的程序包" />
+    <Link Source="SportsStore.UnitTests" Target="Moq.Delegates 4.0.10827.1" Category="安装的程序包" />
+    <Link Source="SportsStore.UnitTests" Target="Moq.WithoutCastle 4.0.10827.2" Category="安装的程序包" />
+    <Link Source="SportsStore.UnitTests" Target="Ninject 3.0.1.10" Category="安装的程序包" />
+    <Link Source="jQuery.UI.Combined 1.8.11" Target="jQuery 1.5.1" Category="程序包依赖项" />
+    <Link Source="jQuery.Validation 1.8" Target="jQuery 1.5.1" Category="程序包依赖项" />
+    <Link Source="jQuery.vsdoc 1.5.1" Target="jQuery 1.5.1" Category="程序包依赖项" />
+    <Link Source="SportsStore.WebUI" Target="EntityFramework 4.1.10331.0" Category="安装的程序包" />
+    <Link Source="SportsStore.WebUI" Target="jQuery.UI.Combined 1.8.11" Category="安装的程序包" />
+    <Link Source="SportsStore.WebUI" Target="jQuery.Validation 1.8" Category="安装的程序包" />
+    <Link Source="SportsStore.WebUI" Target="jQuery.vsdoc 1.5.1" Category="安装的程序包" />
+    <Link Source="SportsStore.WebUI" Target="Modernizr 1.7" Category="安装的程序包" />
+    <Link Source="SportsStore.WebUI" Target="Ninject 3.0.1.10" Category="安装的程序包" />
+    <Link Source="SportsStore.Domain" Target="Ninject 3.0.1.10" Category="安装的程序包" />
+  </Links>
+  <Categories>
+    <Category Id="项目" />
+    <Category Id="包" />
+  </Categories>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="项目" ValueLabel="True">
+      <Condition Expression="HasCategory('项目')" />
+      <Setter Property="Background" Value="Blue" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="程序包依赖项" ValueLabel="True">
+      <Condition Expression="HasCategory('程序包依赖项')" />
+      <Setter Property="Background" Value="Yellow" />
+    </Style>
+  </Styles>
+</DirectedGraph>

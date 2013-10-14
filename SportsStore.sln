@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.Domain", "SportsStore.Domain\SportsStore.Domain.csproj", "{22B05CAD-06DE-45A5-8A2C-AB0F9BC1F47C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.WebUI", "SportsStore.WebUI\SportsStore.WebUI.csproj", "{2EE912C7-27E0-4ACE-A912-6692B09923AA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{22B05CAD-06DE-45A5-8A2C-AB0F9BC1F47C} = {22B05CAD-06DE-45A5-8A2C-AB0F9BC1F47C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.UnitTests", "SportsStore.UnitTests\SportsStore.UnitTests.csproj", "{E8DEF401-1B9E-44B4-9F03-7DF4741E3D4D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{22B05CAD-06DE-45A5-8A2C-AB0F9BC1F47C} = {22B05CAD-06DE-45A5-8A2C-AB0F9BC1F47C}
+		{2EE912C7-27E0-4ACE-A912-6692B09923AA} = {2EE912C7-27E0-4ACE-A912-6692B09923AA}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A48873D1-2D7B-4498-B547-23109FA82F1B}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		SportsStore.vsmdi = SportsStore.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = SportsStore.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22B05CAD-06DE-45A5-8A2C-AB0F9BC1F47C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22B05CAD-06DE-45A5-8A2C-AB0F9BC1F47C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22B05CAD-06DE-45A5-8A2C-AB0F9BC1F47C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22B05CAD-06DE-45A5-8A2C-AB0F9BC1F47C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EE912C7-27E0-4ACE-A912-6692B09923AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EE912C7-27E0-4ACE-A912-6692B09923AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EE912C7-27E0-4ACE-A912-6692B09923AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EE912C7-27E0-4ACE-A912-6692B09923AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8DEF401-1B9E-44B4-9F03-7DF4741E3D4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8DEF401-1B9E-44B4-9F03-7DF4741E3D4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8DEF401-1B9E-44B4-9F03-7DF4741E3D4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8DEF401-1B9E-44B4-9F03-7DF4741E3D4D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
